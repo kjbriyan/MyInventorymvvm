@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    
+    <Button
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Pekerjaan"
+        android:id="@+id/btn_pekerjaan"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:drawableTop="@drawable/ic_work"
+        android:background="@color/lightblue"
+        />
+    <Button
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:text="Keuangan"
+        android:id="@+id/btn_keuangan"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:drawableTop="@drawable/ic_money"
+        android:background="@color/lightblue"
+        />
+
+</LinearLayout>

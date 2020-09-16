@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgr"
+    tools:context=".activity_pengawas.RealisasiActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/idatas"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reports_header_bk2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lndateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteTextColor">
+
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01 Mey 2020"
+                        android:textColor="@color/whiteTextColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/btn_bukti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Upload Bukti"
+                        android:textColor="@color/whiteTextColor"
+                        app:layout_constraintBottom_toBottomOf="@+id/dateTextView"
+                        app:layout_constraintEnd_toStartOf="@+id/id_btn_kirim"
+                        app:layout_constraintHorizontal_bias="0.84"
+                        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+                        app:layout_constraintTop_toTopOf="@+id/dateTextView" />
+
+                    <Button
+                        android:id="@+id/id_btn_kirim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:text="Kirim"
+                        android:textColor="@color/whiteTextColor"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_bukti"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_bukti" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="85dp"
+                    android:layout_below="@id/lndateTextView"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/salesHeaderTextView"
+                            android:text="Minggu lalu"
+                            android:gravity="center"
+                            android:layout_marginTop="0dp"
+                            style="@style/reportContentText" />
+
+                        <TextView
+                            style="@style/viewParent.headerText"
+                            android:textColor="@color/whiteTextColor"
+                            android:text="7,1223"
+                            android:id="@+id/idtotal_minggulalu"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/salesHeaderTextView2"
+                            android:text="Minggu Ini"
+                            android:gravity="center"
+                            android:layout_marginTop="0dp"
+                            style="@style/reportContentText" />
+
+                        <TextView
+                            style="@style/viewParent.headerText"
+                            android:textColor="@color/whiteTextColor"
+                            android:text="5,3452"
+                            android:id="@+id/idtotal_mingguini"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/salesHeaderTextView3"
+                            android:text="s/d Minggu Ini"
+                            android:gravity="center"
+                            android:layout_marginTop="0dp"
+                            style="@style/reportContentText" />
+
+                        <TextView
+                            style="@style/viewParent.headerText"
+                            android:textColor="@color/whiteTextColor"
+                            android:id="@+id/idtotal_sdmingguini"
+                            android:text="12,4324"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="0dp"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerLayout"
+                android:layout_marginTop="-90dp">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/reportsCardStyleoption"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/idspinsection"
+                            style="@style/reportContentText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="#E06276" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cardaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardLayout">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/reportsCardStyleoption"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            style="@style/reportContentText"
+                            android:id="@+id/idspinsubpekerjaan"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="#E06276" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/idRvRealisasi"
+        tools:listitem="@layout/list_detail_pekerjaan"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idatas"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Bike App Concept</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sem nullam dapibus enim, odio at velit a non. Tristique aliquet faucibus ridiculus fermentum arcu nullam magna.</string>
+
+    <string name="label_do_exit">Press one more time to exit</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Don\'t have an account ?</string>
+    <string name="register">Register</string>
+    <string name="fullname">Full Name</string>
+    <string name="repeatpw">Repeat Password</string>
+    <string name="submit">Submit</string>
+    <string name="invalid_validation">Format invalid or too short</string>
+    <string name="username_exist">Username has been taken</string>
+    <string name="didnt_match_validation">Password doesn\'t match</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="about">About</string>
+    <string name="account">Account</string>
+    <string name="bike_app">Bike App</string>
+    <string name="just_a_simple_bike_app">Just a simple bike app</string>
+    <string name="roadbike">Road Bike</string>
+    <string name="mountain_bike">Mountain Bike</string>
+    <string name="trick_bike">Trick Bike</string>
+    <string name="setting">Setting</string>
+    <string name="fizhu">Fizhu</string>
+    <string name="fizhu_small">\@fizhu</string>
+    <string name="lastest">One of Your Favourites</string>
+    <string name="edit">Edit Profile</string>
+    <string name="change">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="star">⭐⭐⭐⭐⭐ 5/5</string>
+    <string name="there_is_no_one_of_your_favourite_here">There is no one of your favourite here</string>
+    <string name="oops">Oops</string>
+    <string name="version">Version 1.0</string>
+    <string name="if_you_like_the_app_it_will_be_pleasure_to_give_some_feedback">If you like the app, give me some feedback :)</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate on Google Play</string>
+    <string name="mail">Feedback by E-mail</string>
+    <string name="github">Source code on Github</string>
+    <string name="figma">Design on Figma</string>
+    <string name="share_with">Share With</string>
+    <string name="about_email_intent">About:Bike App Concept</string>
+    <string name="email_app_not_found">Email app not found !</string>
+</resources>

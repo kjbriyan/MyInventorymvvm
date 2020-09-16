@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.conceptdesignarchitect.laporanku">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.DokumentasiActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity_pengawas.BuktiActivity" />
+        <activity android:name=".activity_kpa_kasubdit.WebViewReportActivity" />
+        <activity
+            android:name=".activity_ppk.WebViewReportppk"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WebViewHistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity_ppspm.d_history.b_detail_budget.DetailBudgetingActivity" />
+        <activity android:name=".activity_ppspm.d_history.a_pilih_budget.HistoryBudgetingActivity" />
+        <activity android:name=".activity_ppspm.d_history.HistoryPpspmActivity" />
+        <activity android:name=".activity_ppspm.b_report_budget.grafik.PilihLaporanActivity" />
+        <activity
+            android:name=".activity_ppspm.b_report_budget.grafik.LaporanGrafikActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_ppspm.b_report_budget.UploadUangActivity" />
+        <activity android:name=".activity_ppspm.b_report_budget.BudgetingProyekActivity" />
+        <activity
+            android:name=".activity.BudgetingActivity"
+            android:theme="@style/material_noaction" />
+        <activity
+            android:name=".activity_ppspm.MainPpspmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_kpa_kasubdit.CekLaporanActivity" />
+        <activity
+            android:name=".activity_kpa_kasubdit.CekRealisasiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_kpa_kasubdit.MainKpaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity_ppk.LihatRealisasiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_ppk.LihatLaporanActivity" />
+        <activity
+            android:name=".activity.ProfilActivity"
+            android:theme="@style/material_noaction" />
+        <activity android:name=".activity_pengawas.MingguActivity" />
+        <activity
+            android:name=".activity_pengawas.RealisasiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_pengawas.PekerjaanActivity" />
+        <activity
+            android:name=".activity_pengawas.MainPengawasActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_ppk.MainPPKActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

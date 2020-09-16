@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reports_header_bk">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_failgetdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:text="Failed get data detail grafik"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ln_diagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_pelaksana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalpelaksana"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/pink"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalpelaksana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_pelaksana"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pelaksana" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_pelaksana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalpelaksana"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalpelaksana" />
+
+                <TextView
+                    android:id="@+id/tv_pelaksana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pelaksana"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkurangpel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/spv_pelaksana"
+                    app:layout_constraintStart_toStartOf="@+id/spv_pelaksana"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_pelaksana" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/ln">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_perencana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalperencana"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/lightyellow"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalperencana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_perencana"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_perencana" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_perencana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalperencana"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalperencana" />
+
+                <TextView
+                    android:id="@+id/tv_perencana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perencana"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkurangper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/spv_perencana"
+                    app:layout_constraintStart_toStartOf="@+id/spv_perencana"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_perencana" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/ln1">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_pengawas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalpengawas"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/holowblue"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalpengawas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_pengawas"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_pengawas" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_pengawas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalpengawas"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalpengawas" />
+
+                <TextView
+                    android:id="@+id/tv_pengawas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengawas"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkurangpeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/spv_pengawas"
+                    app:layout_constraintStart_toStartOf="@+id/spv_pengawas"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_pengawas" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/ln1">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_honorium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalhonorium"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/orange"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalhonorium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_honorium"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_honorium" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_honorium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalhonorium"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalhonorium" />
+
+                <TextView
+                    android:id="@+id/tv_honorium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Honorium"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkuranhonor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/spv_honorium"
+                    app:layout_constraintStart_toStartOf="@+id/spv_honorium"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_honorium" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln4"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_perjalanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalperjalanan"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/flowgreen"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalperjalanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_perjalanan"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_perjalanan" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_perjalanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalperjalanan"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalperjalanan" />
+
+                <TextView
+                    android:id="@+id/tv_perjalanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perjalanan"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkurangperja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/spv_perjalanan"
+                    app:layout_constraintStart_toStartOf="@+id/spv_perjalanan"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_perjalanan" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln5"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+
+                <params.com.stepprogressview.StepProgressView
+                    android:id="@+id/spv_habis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:maxWidth="5dp"
+                    android:padding="@dimen/_15sdp"
+                    app:currentProgress="60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_totalhabis"
+                    app:markerColor="@color/lightblue"
+                    app:progressBackgroundColor="@color/whiteTextColor"
+                    app:progressBarHeight="10dp"
+                    app:progressColor="@color/bakul"
+                    app:textColor="@color/whiteTextColor"
+                    app:textMargin="5dp"
+                    app:textSize="15sp"
+                    app:totalProgress="130" />
+
+                <TextView
+                    android:id="@+id/tv_totalhabis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2000"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/tv_habis"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_habis" />
+
+                <TextView
+                    android:id="@+id/tv_totalbudget_habis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="/3500 ml"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_totalhabis"
+                    app:layout_constraintStart_toEndOf="@+id/tv_totalhabis" />
+
+                <TextView
+                    android:id="@+id/tv_habis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Habis Pakai"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvkuranghabis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="-Rp.120023902910"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spv_habis" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

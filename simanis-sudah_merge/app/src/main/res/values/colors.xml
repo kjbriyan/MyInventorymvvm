@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3867d6</color>
+    <color name="colorPrimaryDark">#4b7bec</color>
+    <color name="colorAccent">#2d98da</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="backgr">#F4F4F4</color>
+
+    <color name="bakul">#009688</color>
+
+    <color name="kuning">#FFCD36</color>
+    <color name="hollowyelow">#fdcb6e</color>
+
+    <color name="pink">#FF3278</color>
+    <color name="holowblue">#23BAFF</color>
+    <color name="orange">#FF5733</color>
+    <color name="flowgreen">#B9FF33</color>
+    <color name="tosca">#61FFB6</color>
+    <color name="lightyellow">#F9FF3E</color>
+
+    <color name="headercard">#0D79BD</color>
+    <color name="lightblue">#7fdbda</color>
+
+</resources>

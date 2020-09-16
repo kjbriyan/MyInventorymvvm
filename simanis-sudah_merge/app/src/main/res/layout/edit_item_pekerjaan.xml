@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hollowyelow"
+    android:padding="@dimen/_10sdp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Galian Tanah"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Volume "
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/salesHeaderTextView"
+                style="@style/reportContentText"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Minggu lalu" />
+
+            <TextView
+                android:id="@+id/tv_vol_minglalu"
+                style="@style/viewParent.headerText"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:text="7,1223"
+                android:textColor="@color/whiteTextColor" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/salesHeaderTextView2"
+                style="@style/reportContentText"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Minggu Ini" />
+
+            <EditText
+                android:layout_width="@dimen/_60sdp"
+                android:id="@+id/et_vol_mingini"
+                style="@style/viewParent.headerText"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:inputType="numberDecimal"
+                android:text="5,3452"
+                android:textColor="@color/whiteTextColor" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/salesHeaderTextView3"
+                style="@style/reportContentText"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="s/d Minggu Ini" />
+
+            <TextView
+                android:id="@+id/tv_vol_sdmingini"
+                style="@style/viewParent.headerText"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:text="12,4324"
+                android:textColor="@color/whiteTextColor" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

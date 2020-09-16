@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.fizhu.bikeappconcept.viewmodels.HomeViewModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_app_title"
+                style="@style/muliBoldExtraLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/bike_app"
+                android:textColor="@color/md_white_1000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_app_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/just_a_simple_bike_app"
+                app:layout_constraintStart_toStartOf="@+id/tv_app_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_app_title" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:background="@null"
+                profileImage="@{viewModel.userData.photo}"
+                android:layout_width="@dimen/offset"
+                android:layout_height="@dimen/offset"
+                android:layout_marginEnd="@dimen/margin"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_app_subtitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_app_title" />
+
+            <LinearLayout
+                android:id="@+id/ly_bike_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin_more_extra"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_app_subtitle">
+
+                <com.fizhu.bikeappconcept.utils.VerticalTextView
+                    android:id="@+id/tv_roadbike"
+                    style="@style/muliBoldLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/half_padding"
+                    android:text="@string/roadbike"
+                    android:textColor="@color/colorPrimary"
+                    app:direction="downtoup" />
+
+                <com.fizhu.bikeappconcept.utils.VerticalTextView
+                    android:id="@+id/tv_mtb"
+                    style="@style/muliBoldLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:padding="@dimen/half_padding"
+                    android:text="@string/mountain_bike"
+                    app:direction="downtoup" />
+
+                <com.fizhu.bikeappconcept.utils.VerticalTextView
+                    android:id="@+id/tv_bmx"
+                    style="@style/muliBoldLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding"
+                    android:padding="@dimen/half_padding"
+                    android:text="@string/trick_bike"
+                    app:direction="downtoup" />
+
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_bike"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="@dimen/margin"
+                app:layout_constraintBottom_toBottomOf="@+id/ly_bike_tab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ly_bike_tab"
+                app:layout_constraintTop_toTopOf="@+id/ly_bike_tab" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_selected_bike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_more_extra"
+                android:adjustViewBounds="true"
+                android:layoutDirection="rtl"
+                android:scaleType="centerCrop"
+                android:src="@drawable/road_bike"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ly_bike_tab" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

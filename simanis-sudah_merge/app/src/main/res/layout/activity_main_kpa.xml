@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_height="match_parent"
+    tools:context=".activity_kpa_kasubdit.MainKpaActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_weight="75"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="20"
+                    android:paddingLeft="8dp"
+                    android:weightSum="100"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="Si Manis"
+                        android:layout_height="match_parent">
+                    </TextView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#777777" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:id="@+id/idUserEmail"
+                        android:text="Concept_Design@yahoo.com"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_weight="80"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:id="@+id/id_img_prof"
+                            android:layout_centerInParent="true"
+                            android:layout_height="60dp"
+                            android:src="@drawable/builder">
+                        </ImageView>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_weight="25"
+            android:src="@drawable/foto"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="40"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/card1"
+                    android:background="@color/headercard"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="match_parent"
+                        android:text="SISTEM MONITORING"
+                        android:textSize="15sp"
+                        android:textColor="@color/whiteTextColor"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/card1"
+                    app:cardCornerRadius="@dimen/cardview_default_radius"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:weightSum="100"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/id_tombol_report"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/btninireport"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="0dp"
+                                android:orientation="vertical">
+
+                                <ru.nikartm.support.ImageBadgeView
+                                    android:id="@+id/id_badge_report"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="5dp"
+                                    android:src="@drawable/checklist"
+                                    app:ibv_badgeLimitValue="false"
+                                    app:ibv_badgeTextSize="12sp"
+                                    app:ibv_badgeTextStyle="bold"
+                                    app:ibv_fixedBadgeRadius="12dp"
+                                    app:ibv_maxBadgeValue="3"
+                                    tools:ibv_badgeBackground="@drawable/rectangle_rounded" />
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:text="Report"
+                                android:padding="8dp"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btninireport"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="25"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/id_btn_report_budget"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/btnini"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg2"
+                                    android:layout_gravity="center"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/business">
+                                </ImageView>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:padding="8dp"
+                                android:text="Report Budgeting"
+                                android:layout_below="@+id/btnini"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/id_btn_progress"
+
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@id/btniniprog"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg3"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/wheelbarrow"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:text="On Progress"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btniniprog"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/id_btn_history"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/btnopo"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg4"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/history"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:text="History"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btnopo"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/card2"
+                    android:background="@color/headercard"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="match_parent"
+                        android:text="USER SETTINGS"
+                        android:textSize="15sp"
+                        android:textColor="@color/whiteTextColor"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/card2"
+                    app:cardCornerRadius="@dimen/cardview_default_radius"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:weightSum="100"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:id="@+id/id_btn_full_name"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:id="@+id/btnfull"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg5"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/worker"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:padding="8dp"
+                                android:text="Full Name"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:layout_below="@id/btnfull"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:id="@+id/id_btn_email"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/btnm"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg6"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/email"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:text="Email"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btnm"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:id="@+id/id_btn_password"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/btnpass"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg7"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/login"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:text="Password"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btnpass"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:id="@+id/id_btn_profil"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/btnkeri"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:id="@+id/idimg8"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/carnet"
+                                    android:textAlignment="center">
+                                </ImageView>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                            <TextView
+                                style="@style/reportContentText"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:text="Profil"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/btnkeri"
+                                android:textColor="#979797"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
