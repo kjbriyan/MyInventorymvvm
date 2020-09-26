@@ -12,5 +12,6 @@ data class DataItem(
 	val name: String? = null,
 	val idUser: String? = null,
 	val username: String? = null
+//ini adalah model response loginnya
 )
 
